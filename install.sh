@@ -10,3 +10,4 @@ npm install --global yarn
 npm i -g pm2
 cd ./frontend && yarn install && yarn build;
 cd ../backend && yarn install;
+pm2 start "node --es-module-specifier-resolution=node src/index.js"
